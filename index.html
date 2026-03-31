@@ -1,1 +1,122 @@
-Bonjour! 
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nom de l'agence — Accueil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">NA</div>
+        <div>
+          <strong>Nom de l'agence</strong><br>
+          <small style="color:var(--muted);font-weight:600">Design & Développement</small>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="contact.html">Obtenir un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="h-eyebrow">Agence digitale</div>
+        <h1 class="h-title">Nous concevons des expériences numériques claires et performantes</h1>
+        <p class="h-lead">Equipe pluridisciplinaire spécialisée en stratégie, design UX/UI et développement front-end. Nous accompagnons les marques sur des projets web, mobile et e-commerce.</p>
+        <div class="h-actions">
+          <a class="cta" href="contact.html">Demander un devis</a>
+          <a href="portfolio.html" style="padding:8px 14px;border-radius:10px;background:transparent;text-decoration:none;color:var(--primary);border:1px solid rgba(0,82,204,0.08);font-weight:700">Voir le portfolio</a>
+        </div>
+      </div>
+      <div class="h-illustration" aria-hidden="true">
+        <!-- Illustration/maquette placeholder -->
+        <div style="height:260px;border-radius:10px;background:linear-gradient(90deg,#e6f0ff,#ffffff);display:flex;align-items:center;justify-content:center;color:var(--muted)">Maquette / Image</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="kicker">Nos services</div>
+      <h2>Ce que nous proposons</h2>
+      <p class="lead">Des solutions sur mesure pour accompagner la croissance digitale de votre entreprise.</p>
+
+      <div class="services" style="margin-top:18px">
+        <div class="card">
+          <h3>Stratégie digitale</h3>
+          <p>Audit, définition de roadmap produit, user research et priorisation des fonctionnalités.</p>
+        </div>
+        <div class="card">
+          <h3>Design UX & UI</h3>
+          <p>Wireframes, prototypes interactifs et design d'interfaces centrés utilisateur.</p>
+        </div>
+        <div class="card">
+          <h3>Développement</h3>
+          <p>Intégration front-end, sites statiques, CMS headless et performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div class="kicker">Réalisations</div>
+          <h2>Projets récents</h2>
+        </div>
+        <div style="color:var(--muted)">Voir tout →</div>
+      </div>
+
+      <div class="portfolio-grid" style="margin-top:18px">
+        <div class="port-item">
+          <h4>Site e-commerce premium</h4>
+          <p class="lead">Refonte UI et optimisation du funnel d'achat pour augmenter la conversion.</p>
+        </div>
+        <div class="port-item">
+          <h4>Application mobile</h4>
+          <p class="lead">Design d'une app native avec flows utilisateurs optimisés et onboarding.</p>
+        </div>
+        <div class="port-item">
+          <h4>Plateforme SaaS</h4>
+          <p class="lead">Dashboard d'administration avec visualisations et automatisations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+        <div>
+          <h3>Prêt à démarrer votre projet ?</h3>
+          <p class="lead">Contactez-nous pour une première consultation gratuite.</p>
+        </div>
+        <div>
+          <a class="cta" href="contact.html">Contactez-nous</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div>
+        <strong>Nom de l'agence</strong><br>
+        <small class="lead">Design & Développement • Paris</small>
+      </div>
+      <div style="color:var(--muted)">© <span id="year"></span> — Tous droits réservés</div>
+    </div>
+  </footer>
+
+  <script>
+    // petit script pour l'année du footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Nom de l'agence</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">NA</div>
+        <div>
+          <strong>Nom de l'agence</strong><br>
+          <small style="color:var(--muted);font-weight:600">Design & Développement</small>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="contact.html">Obtenir un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="kicker">Portfolio</div>
+      <h2>Travaux sélectionnés</h2>
+      <p class="lead">Quelques projets représentatifs de notre savoir-faire.</p>
+
+      <div class="portfolio-grid" style="margin-top:18px">
+        <div class="port-item">
+          <h4>Projet A — E‑commerce</h4>
+          <p class="lead">Optimisation conversion, nouvelle identité visuelle.</p>
+        </div>
+        <div class="port-item">
+          <h4>Projet B — App mobile</h4>
+          <p class="lead">Design d'interface et prototype interactif testé en 50+ sessions.</p>
+        </div>
+        <div class="port-item">
+          <h4>Projet C — SaaS</h4>
+          <p class="lead">Dashboard analytique pour usage interne et clients.</p>
+        </div>
+        <div class="port-item">
+          <h4>Projet D — Site vitrine</h4>
+          <p class="lead">Création d'un site performant et accessible.</p>
+        </div>
+        <div class="port-item">
+          <h4>Projet E — Migration CMS</h4>
+          <p class="lead">Migration vers headless CMS pour plus de flexibilité.</p>
+        </div>
+        <div class="port-item">
+          <h4>Projet F — Branding</h4>
+          <p class="lead">Identité visuelle et guidelines pour une marque B2B.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div>
+        <strong>Nom de l'agence</strong><br>
+        <small class="lead">Design & Développement • Paris</small>
+      </div>
+      <div style="color:var(--muted)">© <span id="year"></span> — Tous droits réservés</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

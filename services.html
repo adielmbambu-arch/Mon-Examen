@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Nom de l'agence</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">NA</div>
+        <div>
+          <strong>Nom de l'agence</strong><br>
+          <small style="color:var(--muted);font-weight:600">Design & Développement</small>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="contact.html">Obtenir un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="kicker">Services</div>
+      <h2>Nos expertises</h2>
+      <p class="lead">Offres packagées ou accompagnement sur-mesure selon vos besoins.</p>
+
+      <div class="services" style="margin-top:18px">
+        <div class="card">
+          <h3>Audit & stratégie</h3>
+          <p>Audit UX, analytics, roadmap produit et définition d'indicateurs clés.</p>
+        </div>
+        <div class="card">
+          <h3>Design & prototypage</h3>
+          <p>Création d'interfaces, charte graphique, prototypes testables et design system.</p>
+        </div>
+        <div class="card">
+          <h3>Développement front-end</h3>
+          <p>HTML/CSS, frameworks JS modernes, optimisation performance et accessibilité.</p>
+        </div>
+        <div class="card">
+          <h3>Intégration CMS & e‑commerce</h3>
+          <p>Headless CMS, WordPress, Shopify et solutions sur mesure.</p>
+        </div>
+        <div class="card">
+          <h3>Maintenance & support</h3>
+          <p>Contrats de maintenance, monitoring et mises à jour régulières.</p>
+        </div>
+        <div class="card">
+          <h3>Formation & transfert</h3>
+          <p>Ateliers, documentation et accompagnement pour prendre en main vos outils.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div>
+        <strong>Nom de l'agence</strong><br>
+        <small class="lead">Design & Développement • Paris</small>
+      </div>
+      <div style="color:var(--muted)">© <span id="year"></span> — Tous droits réservés</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

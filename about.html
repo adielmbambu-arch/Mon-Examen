@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>À propos — Nom de l'agence</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">NA</div>
+        <div>
+          <strong>Nom de l'agence</strong><br>
+          <small style="color:var(--muted);font-weight:600">Design & Développement</small>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="contact.html">Obtenir un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="kicker">À propos</div>
+      <h2>Notre histoire</h2>
+      <p class="lead">Fondée par des designers et développeurs passionnés, notre agence aide les entreprises à lancer des produits numériques utiles et beaux.</p>
+
+      <div class="cards" style="margin-top:18px">
+        <div class="card">
+          <h3>Notre mission</h3>
+          <p>Créer des expériences digitales qui simplifient la vie des utilisateurs et génèrent de la valeur pour les entreprises.</p>
+        </div>
+        <div class="card">
+          <h3>Notre méthode</h3>
+          <p>Recherche, prototypes rapides, tests utilisateurs et développement itératif pour livrer des produits fiables.</p>
+        </div>
+        <div class="card">
+          <h3>Nos valeurs</h3>
+          <p>Transparence, qualité, collaboration et amélioration continue.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Équipe</h2>
+      <p class="lead">Une équipe courte et efficace : designers, développeurs front-end, product manager.</p>
+
+      <div class="cards" style="margin-top:18px">
+        <div class="card">
+          <h3>Marie Dupont</h3>
+          <p>Directrice de création — UX / UI</p>
+        </div>
+        <div class="card">
+          <h3>Lucas Martin</h3>
+          <p>Lead développeur — Front-end</p>
+        </div>
+        <div class="card">
+          <h3>Camille Bernard</h3>
+          <p>Product manager — Stratégie produit</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div>
+        <strong>Nom de l'agence</strong><br>
+        <small class="lead">Design & Développement • Paris</small>
+      </div>
+      <div style="color:var(--muted)">© <span id="year"></span> — Tous droits réservés</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
